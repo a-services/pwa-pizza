@@ -1,14 +1,51 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+
+      <ion-searchbar class="search-field" (ionInput)="searchPizzas($event)"></ion-searchbar>
+      <!--ion-item item-content class="search-field">
+        <ion-input type="text" placeholder="Find Pizza..." (input)="searchPizzas($event)">
+        </ion-input>
+        <ion-icon item-content name="search" color="">
+        </ion-icon>
+      </ion-item-->
+
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-card *ngFor="let p of pizzas">
+
+    <ion-item>
+
+      <ion-avatar item-start>
+        <img src="assets/imgs/pizza-icon.png">
+      </ion-avatar>
+
+      <button ion-button icon-only color="light" item-end (click)="goToDetails(p)">
+          <ion-icon name="create"></ion-icon>
+      </button>
+
+      <h2>{{p.name}}</h2>
+
+    </ion-item>
+
+    <ion-card-content>
+      {{p.description}}
+
+      <div class="tag-line">
+        <ion-chip item-content *ngFor="let t of p.tags">
+          <ion-label>{{t}}</ion-label>
+        </ion-chip>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab bottom right>
+      <button ion-fab (click)="addPizza()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+
 </ion-content>
