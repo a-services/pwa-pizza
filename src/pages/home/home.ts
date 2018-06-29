@@ -19,7 +19,7 @@ export class HomePage {
               public appery: Appery) {
   }
 
-  ionViewDidLoad() {
+  ionViewDidEnter() {
     const httpOptions = {
       headers: new HttpHeaders({
         'X-Appery-Database-Id': Appery.DB_ID
