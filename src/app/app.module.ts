@@ -5,25 +5,24 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { DetailsPage } from '../pages/details/details';
+import { DetailsPageModule } from '../pages/details/details.module';
 import { ApperyProvider } from '../providers/appery/appery';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    DetailsPage
+    HomePage
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    DetailsPageModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    DetailsPage
+    HomePage
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler},
