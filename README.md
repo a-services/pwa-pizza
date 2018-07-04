@@ -23,12 +23,12 @@ npm run ionic:build -- --prod
 
 - "Add to Home Screen" button appears in Chrome
 
-[Chrome](screenshots/chrome_add.png)
+![Chrome](screenshots/chrome_add.png)
 
 - Samsung Internet browser has a button in title bar that allows
 adding the app icon to Home screen
 
-(Samsung Internet)[screenshots/samsung_add.png]
+![Samsung Internet](screenshots/samsung_add.png)
 
 One can add app icon to Home screen twice: from Chrome and from Samsung Internet browser.
 
@@ -55,7 +55,7 @@ iOS added some PWA support since version 11.3
 - To add app icon to Home screen one should click "Share" icon in Safari, 
 then "Add to home screen"
 
-[Safari](screenshots/safari_add.png)
+![Safari](screenshots/safari_add.png)
 
 iOS 11.4 saves Home screen icon as app screenshot, ignoring app icon provided in manifest
 
