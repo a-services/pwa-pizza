@@ -1,15 +1,11 @@
 # PWA Pizza
 
-Example of Ionic 3 Progressive Web Application that performs 
+Example of Ionic 3 Progressive Web Application that performs
 Create-Read-Update functions for Appery.io database.
 
-Deployed at https://mock-akula.herokuapp.com/pizza
+Deployed at https://pizza-pwa.app.appery.io
 
 Intended to check PWA capabilites on different mobile devices/browsers.
-
-This app still missing Delete functionality, which can be found 
-in another app at
-https://appery.io/app/view/58f46daa-8779-401e-8317-dbaa22adab28/
 
 To build:
 
@@ -37,27 +33,26 @@ One can add app icon to Home screen twice: from Chrome and from Samsung Internet
 App icon on Home screen made by Chrome opens app in fullscreen properly.
 
 App icon made by Samsung Internet browser opens app with URL still visible in title bar.
- 
+
 ### Offline mode
 
-This demo implements the simplest strategy for offline mode: 
-GET requests used to read data from ApperyDB are coming from cache and available in offline mode. 
+This demo implements the simplest strategy for offline mode:
+GET requests used to read data from ApperyDB are coming from cache and available in offline mode.
 POST requests to update DB return an error.
 
 This is true for both Chrome and Samsung Internet browser.
 
 ## iOS
 
-iOS added some PWA support since version 11.3
+iOS added some PWA support since version 11.3, but there were still some issues.
+We tested it against recent iOS version available at the moment which is 11.4.1
 
 ### Adding icon to Home screen
 
-- To add app icon to Home screen one should click "Share" icon in Safari, 
+- To add app icon to Home screen one should click "Share" icon in Safari,
 then "Add to home screen"
 
 ![Safari](screenshots/safari_add.png)
-
-iOS 11.4 saves Home screen icon as app screenshot, ignoring app icon provided in manifest
 
 ### Fullscreen mode
 

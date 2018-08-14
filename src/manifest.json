@@ -1,6 +1,6 @@
 {
-  "name": "Appery Pizza",
-  "short_name": "Appery Pizza",
+  "name": "Pizza PWA",
+  "short_name": "Pizza PWA",
   "start_url": "index.html",
   "display": "fullscreen",
   "icons": [{
